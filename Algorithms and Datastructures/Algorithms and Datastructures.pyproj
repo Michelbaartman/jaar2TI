@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{d491e421-7dc8-4ea9-bdf9-8b86b4a22e65}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>week1opdracht4.py</StartupFile>
+    <StartupFile>week1opdracht5.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -23,6 +23,9 @@
     <Compile Include="week1opdracht2.py" />
     <Compile Include="week1opdracht3.py" />
     <Compile Include="week1opdracht4.py" />
+    <Compile Include="week1opdracht5.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
