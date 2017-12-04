@@ -1,3 +1,4 @@
+
 def lookandsay_convert(num):
     """
     lookandsay_convert(num : int)
@@ -27,15 +28,14 @@ def lookandsay_convert(num):
     for i in numStr:
         if i == prev:
             count += 1
-        else:
+        else: ## niet transpirant, duidelijker, compacter, simpeler, denk pythonic
             if counting == True:
                 endStr += str(count) + prev
                 counting = False
             count = 1
             prev = i
             counting = True
-
-
+            
     return int(endStr)
 
 def lookandsay_sequence(num, amount):

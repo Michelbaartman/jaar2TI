@@ -17,7 +17,7 @@ def classCreator(i):
     thisClass = []
     j = 0
     while j < i:
-        thisClass.append(random.randrange(1, 365))
+        thisClass.append(random.randrange(1, 365)) ## [ methode + for i in range ] comprehensive lists in python
         j += 1
 
     return thisClass
@@ -70,7 +70,7 @@ def classCompare(lst, perBool):
             students += 1
 
     for list in lst:
-        while pos1 < len(list):
+        while pos1 < len(list): ## maak er een set van en vergelijk de set met aantal studenten
             while pos2 < len(list):
                 if list[pos1] == list[pos2]:
                     doublesCheck += 1
@@ -80,11 +80,11 @@ def classCompare(lst, perBool):
         pos1 = 0
         pos2 = 1
 
-    if perBool == False:
+    if not perBool:
         return doublesCheck
-    if perBool == True:
+    if perBool:
         return int(doublesCheck / students * 100)
 
-print(str(classCompare(classesCreator(100), True))+'%, percentage check')
-print(classCompare(classesCreator(100), False))
+print(str(classCompare(classesCreator(1000), True))+'%, percentage check') ## 3% is niet goed, verjaardagsparadox
+print(classCompare(classesCreator(1000), False))
 

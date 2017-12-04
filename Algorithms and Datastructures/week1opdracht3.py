@@ -26,7 +26,7 @@ def getPriems(i):
         theList.append(pos)
         pos += 1
 
-    invalid = set()
+    invalid = set() ## invalid slechte verwoording, noPrime zou beter zijn
     pos = 2
     multi = 2
     cur = 0

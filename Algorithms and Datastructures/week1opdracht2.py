@@ -24,7 +24,7 @@ def getNumbers(s):
     theList = []
     saving = False
     savedInt = ''
-    valid = '1234567890'
+    valid = '1234567890' ## alle niet cijfers naar ' ', dan split
     neg = False
 
     for c in s:
@@ -41,7 +41,8 @@ def getNumbers(s):
                 theList.append(int(savedInt))
                 savedInt = ''
                 saving = False
-    if saving == True:
+
+    if saving == True: ## if saving kan ook, of if not saving
         if neg == True:
             savedInt = int(savedInt)*-1
         theList.append(int(savedInt))

@@ -2,7 +2,7 @@
 
 def mymax(a):
     """
-    mymax(list : a)
+    mymax(a : list)
     returns highest int/float value in list a
 
     a : list
@@ -15,7 +15,7 @@ def mymax(a):
     assert len(a) > 0, "not a list"
     highest = a[0]
     for i in a:
-        assert type(i) is int or type(i) is float, "wrong type in list"
+        assert type(i) == int or type(i) == float, "wrong type in list"
         if i > highest:
             highest = i
     return highest
